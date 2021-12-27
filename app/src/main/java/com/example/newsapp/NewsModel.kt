@@ -3,8 +3,9 @@ package com.example.newsapp
 import com.example.newsapp.models.Categories
 import java.io.Serializable
 
-data class Category(
+class NewsModel (
     var category: Categories,
-    var name: Int,
-    var news: List<NewsModel>
-) : Serializable
+    var description: String,
+    var name: String,
+    var url: String
+        ) : Serializable
